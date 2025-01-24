@@ -44,8 +44,8 @@ export default function Header() {
     userName = userName.split(' ')[0];
   }
   return (
-    <header>
-      <div className="flex items-center md:hidden justify-between">
+    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">     
+     <div className="flex items-center md:hidden p-3 justify-between ">
         <Link className="text-primary font-semibold text-2xl" href={'/'}>
           HotelHive
         </Link>
@@ -76,17 +76,22 @@ export default function Header() {
           <AuthLinks status={status} userName={userName} />
         </div>
       )}
-      <div className="hidden md:flex items-center justify-between">
-        <nav className="flex items-center gap-8 text-gray-500 font-semibold">
+      <div className="hidden md:flex items-center justify-between" style={{margin: "10px", padding:"0px 30px 0px 30px"}}>
+        <nav className="flex items-center gap-64 text-gray-500 font-semibold">
           <Link className="text-primary font-semibold text-2xl" href={'/'}>
           HotelHive
           </Link>
-          <Link href={'/'}>Home</Link>
+          <nav className="flex items-center gap-12 text-gray-500 font-semibold">
+        <Link href={'/'}>Home</Link>
           <Link href={'/menu'}>Menu</Link>
           <Link href={'/#about'}>About</Link>
           <Link href={'/#contact'}>Contact</Link>
+
         </nav>
-        <nav className="flex items-center gap-4 text-gray-500 font-semibold">
+         
+        </nav>
+       
+        <nav className="flex items-center gap-8 text-gray-500 font-semibold">
           <AuthLinks status={status} userName={userName} />
           <Link href={'/cart'} className="relative">
             <ShoppingCart />

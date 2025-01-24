@@ -8,12 +8,12 @@ export default function Home() {
     <>
       <Hero />
       <HomeMenu />
-      <section className="text-center my-16" id="about">
+      <section className="text-center my-16 " id="about">
         <SectionHeaders
           subHeader={"Our story"}
           mainHeader={"About us"}
         />
-        <div className="text-gray-500 max-w-md mx-auto mt-4 flex flex-col gap-4">
+        <div className="text-gray-500  mx-auto mt-4 flex flex-col gap-4">
           <p>
             Welcome to HotelHive! We are a vibrant vegetarian restaurant committed to serving you delicious, healthy meals made from the freshest ingredients. Our menu features a variety of wholesome dishes that are designed to satisfy every palate, from classic favorites to innovative creations.
           </p>
@@ -25,7 +25,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="text-center my-8" id="contact">
+      {/* <section className="" id="contact">
         <SectionHeaders
           subHeader={"Do not hesitate"}
           mainHeader={"Contact us"}
@@ -41,7 +41,7 @@ export default function Home() {
             Address: Prayagraj, India
           </p>
         </div>
-      </section>
+      </section>  */}
     </>
   );
 }
