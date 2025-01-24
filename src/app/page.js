@@ -15,23 +15,27 @@ export default function Home() {
         />
         <div className="text-gray-500 max-w-md mx-auto mt-4 flex flex-col gap-4">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni minima odit recusandae. Illum ipsa non repudiandae? Eum ipsam iste quos suscipit tempora? Aperiam esse fugiat inventore laboriosam officiis quam rem!
+          Welcome to HotelHive! We are a vibrant vegetarian restaurant committed to serving you delicious, healthy meals made from the freshest ingredients. Our menu features a variety of wholesome dishes that are designed to satisfy every palate, from classic favorites to innovative creations.
           </p>
-          <p>At consectetur delectus ducimus est facere iure molestias obcaecati quaerat vitae voluptate? Aspernatur dolor explicabo iste minus molestiae pariatur provident quibusdam saepe?</p>
-          <p>Laborum molestias neque nulla obcaecati odio quia quod reprehenderit sit vitae voluptates? Eos, tenetur.</p>
+          <p>We believe in the importance of hygiene and maintain the highest cleanliness standards throughout our kitchen and dining areas. This ensures that you can enjoy your meal in a safe and welcoming environment. </p>
+          <p>Whether you're a vegetarian, a health enthusiast, or simply looking for a delightful dining experience, we invite you to join us at HotelHive. Come and taste the difference today</p>
         </div>
       </section>
-      <section className="text-center my-8" id="contact">
-        <SectionHeaders
-          subHeader={'Don\'t hesitate'}
-          mainHeader={'Contact us'}
-        />
-        <div className="mt-8">
-          <a className="text-4xl underline text-gray-500" href="tel:+7310019508">
-            +7310019508
-          </a>
-        </div>
-      </section>
+<section className="text-center my-8" id="contact">
+  <SectionHeaders
+    subHeader={"Don't hesitate"}
+    mainHeader={'Contact us'}
+  />
+  <div className="mt-3">
+    
+    <p className="text-lg">Mobile: <a className="text-gray-500 underline" href="tel:+7310019508">+7310019508</a></p>
+    <p className="text-lg">Email: <a className="text-gray-500 underline" href="mailto:abhinavmishranit1234@gmail.com">abhinavmishranit1234@gmail.com</a></p>
+    <p className="text-lg">Address: Prayagraj, India</p>
+  </div>
+</section>
+
+
+
     </>
   )
 }

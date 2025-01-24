@@ -1,5 +1,6 @@
 'use client';
 import {CartContext, cartProductPrice} from "@/components/AppContext";
+import Right from "@/components/icons/Right";
 import Trash from "@/components/icons/Trash";
 import AddressInputs from "@/components/layout/AddressInputs";
 import SectionHeaders from "@/components/layout/SectionHeaders";
@@ -106,9 +107,9 @@ export default function CartPage() {
               Total:
             </div>
             <div className="font-semibold pl-2 text-right">
-              ${subtotal}<br />
-              $5<br />
-              ${subtotal + 5}
+            ₹{subtotal}<br />
+              ₹5<br />
+              ₹{subtotal + 5}
             </div>
           </div>
         </div>
@@ -119,7 +120,9 @@ export default function CartPage() {
               addressProps={address}
               setAddressProp={handleAddressChange}
             />
-            <button type="submit">Pay ${subtotal+5}</button>
+            <button type="submit">Order Now 
+            <Right />
+            </button>
           </form>
         </div>
       </div>

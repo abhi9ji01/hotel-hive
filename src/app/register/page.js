@@ -10,6 +10,7 @@ export default function RegisterPage() {
   const [creatingUser, setCreatingUser] = useState(false);
   const [userCreated, setUserCreated] = useState(false);
   const [error, setError] = useState(false);
+  
   async function handleFormSubmit(ev) {
     ev.preventDefault();
     setCreatingUser(true);
@@ -66,7 +67,7 @@ export default function RegisterPage() {
           Login with google
         </button>
         <div className="text-center my-4 text-gray-500 border-t pt-4">
-          Existing account?{' '}
+          Existing account ?{' '}
           <Link className="underline" href={'/login'}>Login here &raquo;</Link>
         </div>
       </form>

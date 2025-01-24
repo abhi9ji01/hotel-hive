@@ -3,6 +3,7 @@ import Header from "@/components/layout/Header";
 import { Roboto } from 'next/font/google'
 import './globals.css'
 import {Toaster} from "react-hot-toast";
+import { SessionProvider } from "next-auth/react";
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] })
 
@@ -21,7 +22,7 @@ export default function RootLayout({ children }) {
             <Header />
             {children}
             <footer className="border-t p-8 text-center text-gray-500 mt-16">
-              &copy; 2023 All rights reserved
+              &copy; 2024 All rights reserved
             </footer>
           </AppProvider>
         </main>
