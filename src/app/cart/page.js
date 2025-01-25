@@ -75,7 +75,7 @@ export default function CartPage() {
 
   if (cartProducts?.length === 0) {
     return (
-      <section className="mt-8 text-center">
+      <section className="mt-16 text-center">
         <SectionHeaders mainHeader="Cart" />
         <p className="mt-4">Your shopping cart is empty 😔</p>
       </section>
@@ -83,11 +83,11 @@ export default function CartPage() {
   }
 
   return (
-    <section className="mt-8">
+    <section className="mt-16">
       <div className="text-center">
         <SectionHeaders mainHeader="Cart" />
       </div>
-      <div className="mt-8 grid gap-8 grid-cols-2">
+      <div className="mt-16 grid gap-8 grid-cols-2">
         <div>
           {cartProducts?.length === 0 && (
             <div>No products in your shopping cart</div>

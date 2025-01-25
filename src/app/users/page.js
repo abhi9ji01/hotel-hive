@@ -26,9 +26,9 @@ export default function UsersPage() {
   }
 
   return (
-    <section className="max-w-2xl mx-auto mt-8">
+    <section className="max-w-2xl mx-auto mt-16">
       <UserTabs isAdmin={true} />
-      <div className="mt-8">
+      <div className="mt-16">
         {users?.length > 0 && users.map(user => (
           <div
             key={user._id}
