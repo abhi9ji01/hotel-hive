@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 
 
 export default function Home() {
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="da4a89d8-2245-40f7-9789-b7aa40891d6e"></script>
   return (
     <>
       <Hero />
