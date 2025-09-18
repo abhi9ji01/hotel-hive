@@ -11,12 +11,6 @@ export default function Home() {
       <HomeMenu />
       <section className="text-center my-16 " id="about">
         <SectionHeaders subHeader={"Our story"} mainHeader={"About us"} />
-
-        <Script
-          src="https://cloud.umami.is/script.js"
-          data-website-id="da4a89d8-2245-40f7-9789-b7aa40891d6e"
-          strategy="lazyOnload" // or "afterInteractive", depending on when you want it to load
-        />
         <div className="text-gray-500  mx-auto mt-4 flex flex-col gap-4">
           <p>
             Welcome to HotelHive! We are a vibrant vegetarian restaurant
