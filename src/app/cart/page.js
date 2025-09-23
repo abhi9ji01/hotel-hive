@@ -7,6 +7,7 @@ import SectionHeaders from "@/components/layout/SectionHeaders";
 import CartProduct from "@/components/menu/CartProduct";
 import {useProfile} from "@/components/UseProfile";
 import Image from "next/image";
+import Link from "next/link";
 import {useContext, useEffect, useState} from "react";
 import toast from "react-hot-toast";
 
@@ -120,9 +121,9 @@ export default function CartPage() {
               addressProps={address}
               setAddressProp={handleAddressChange}
             />
-            <button type="submit">Order Now 
+            <Link href="/menu">Order Now 
             <Right />
-            </button>
+            </Link>
           </form>
         </div>
       </div>

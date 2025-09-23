@@ -1,9 +1,18 @@
+"use client";
+import { useRouter } from "next/navigation";
 import Right from "@/components/icons/Right";
 import Image from "next/image";
-import HomeMenu from "./HomeMenu";
+import HomeMenu from "./HomeMenu";  
 import SectionHeaders from "./SectionHeaders";
 
 export default function Hero() {
+
+   const router = useRouter();
+
+  const handleOrderNow = () => {
+    router.push("/menu"); // redirects to /menu page
+  };
+  
   return (
     <section className="hero md:mt-4 lg:mt-20" >
       <div className="absolute left-0 right-0 w-full justify-start">
@@ -28,16 +37,19 @@ export default function Hero() {
         <br />
         Come for the Food, Stay for the warmth
         </p>
-        <div className="flex gap-4 text-sm ">
-          <button className="flex justify-center bg-primary  flex items-center gap-2 text-white px-4 py-2 rounded-full">
-            Order now 
-            <Right />
-          </button>
-          <button className="flex items-center border-0 gap-2 py-2 text-gray-600 font-semibold p-0">
-            Learn more
-            <Right />
-          </button>
-        </div>
+       <div className="flex text-sm">
+      <button
+        onClick={handleOrderNow}
+        className="flex justify-center bg-primary items-center gap-2 text-white px-4 py-2 rounded-full"
+      >
+        Order now
+        <Right />
+      </button>
+      <button className="flex items-center border-0 gap-2 py-2 text-gray-600 font-semibold underline p-0">
+        Learn more
+        <Right />
+      </button>
+    </div>
       </div>
       <div className="relative hidden md:block">
         <Image src={'/Hotel.jpg'} layout={'fill'} objectFit={'contain'} alt={'pizza'} />
